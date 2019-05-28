@@ -12,6 +12,7 @@ public class PersonHandler {
 
     public String whileLoop() {
         String result = "";
+        String test = "";
         // create a `counter`
         // while `counter` is less than length of array
             // begin loop
@@ -21,6 +22,13 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
 
             // end loop
+        int counter =0;
+        while (counter < personArray.length){
+
+            result+= personArray[counter].toString();
+            counter++;
+
+        }
         return result;
     }
 
@@ -38,7 +46,9 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
-
+        for(int i = 0; i < personArray.length;i++){
+            result+= personArray[i].toString();
+        }
         return result;
     }
 
@@ -54,7 +64,9 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
-
+        for(Person s:personArray ){
+            result+= s;
+        }
         return result;
     }
 
